@@ -45,7 +45,23 @@ v1=c(1,2,3,4)
 [1] 3 6 1
 > print(result[3,3,1])
 [1] 1
->
+
+2)
+>num1 = rbind(rep("A",3), rep("B",3), rep("C",3))
+print("num1")
+print(num1)
+num2 = rbind(rep("P",3), rep("Q",3), rep("R",3))
+print("num2")
+print(num2)
+num3 = rbind(rep("X",3), rep("Y",3), rep("Z",3))
+print("num3")
+print(num3)
+a = matrix(t(cbind(num1,num2,num3)),ncol=3, byrow=T)
+print(a)
+
+output:
+
+
 3)
 array1 =  array(1:30, dim=c(3,5,2))
 print(array1)
